@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(197, 203, 206); 
+    background-color:rgb(240, 238, 231); 
 }
 
 /* Top-Screen */
@@ -46,7 +46,7 @@ button:hover{
 .text-box{
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 12.5%;
     transform: translateY(-50%);
     font-family: sans-serif;
     font-size: 75px;
@@ -89,29 +89,104 @@ h1::before{
     margin-left: auto;
     margin-right: auto; 
     padding-left: 25px;
-    padding-right: 25px ;
+    padding-right: 25px;
 }
 
 /* Concept Box */
 
 .conceptbox {
-    background-color: rgb(88,150,153);
+    background-color: rgba(75, 130, 133, 0.9);
     border-radius: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
 }
 
-.conceptbox h2 {
+h2 {
     color: rgb(96,194,120);
     font-family: sans-serif;
     margin-top: 20px;
     font-size: 27.5px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .conceptbox p{
-    color: rgb(244,223,207);
+    color: rgb(240, 238, 231);
     font-size: 17px;
     line-height: 22px;
     font-family: sans-serif;
     margin: 5px 25px 25px 25px;
+}
+
+/* Dokumenten carousel */
+
+.Dokumente {
+    overflow: hidden;
+    position: relative;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 150px;
+}
+.Dokumente h2{
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+}
+.items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 15s infinite alternate linear;
+}
+.entry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: rgba(75, 130, 133, 0.9);
+    margin: 1em;
+    padding: .5em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.05);
+}
+.items p{
+    text-align: center;
+    padding: 1em;
+    color: rgb(240, 238, 231);
+    font-size: 17px;
+    line-height: 22px;
+    font-family: sans-serif;
+}
+.items img{
+    max-width: 250px;
+    height: 130px ;
+    border-radius: 5px;
+}
+@keyframes carouselAnim {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(calc(-110% + (5*300px)));
+    }
+}
+.faders {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.left, .right {
+    background: linear-gradient(to right, rgba(240, 238, 231) 0%,rgba(240, 238, 231,0) 100%);
+    width: 17.5%;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+}
+.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(240, 238, 231) 0%,rgba(240, 238, 231,0) 100%);
 }
 

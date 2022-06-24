@@ -1,4 +1,5 @@
 Allgemein:
+https://www.youtube.com/watch?v=ZeMMvgCR7aU
 https://www.youtube.com/watch?v=qmTNnZCDJY0
 https://www.youtube.com/watch?v=CZTCciHE72I&t=187s
 https://www.youtube.com/watch?v=oYRda7UtuhA&t=1990s
@@ -12,3 +13,5 @@ https://www.youtube.com/watch?v=dvtDGyftss0
 Darkmode:
 https://www.youtube.com/watch?v=E_dBqPP9MxI
 
+Dokumenten carousel:
+https://codepen.io/designcourse/pen/OYGdPO?editors=1100
