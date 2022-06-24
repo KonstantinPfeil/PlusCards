@@ -120,7 +120,7 @@ h2 {
 .Dokumente {
     overflow: hidden;
     position: relative;
-    max-width: 75%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto; 
     margin-bottom: 150px;
@@ -170,7 +170,7 @@ h2 {
         transform: translate(0,0);
     }
     to {
-        transform: translate(calc(-110% + (5*300px)));
+        transform: translate(calc(-115% + (5*300px)));
     }
 }
 .faders {
@@ -188,5 +188,39 @@ h2 {
 .right {
     right: 0;
     background: linear-gradient(to left, rgba(240, 238, 231) 0%,rgba(240, 238, 231,0) 100%);
+}
+
+/* Sicherheit */
+
+.SicherheitBox{
+    display: flex;
+    border: 5px solid;
+    border-radius: 20px;
+    border-color: rgba(75, 130, 133, 0.9);
+    margin-bottom: 150px;
+}
+.pic1{
+    flex:0 0 300px;
+}
+.pic1 img{
+    max-width: 100%;
+    height: 430px;
+}
+.securityText{
+    flex: 0 0 350px;
+}
+.securityText p{
+    color: rgba(75, 130, 133, 1);
+    font-size: 17px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin: 10px 25px 25px 25px;
+}
+.pic2{
+    flex: 0 0 300px;
+}
+.pic2 img{
+    max-width: 100%;
+    height: 430px;
 }
 
