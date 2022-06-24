@@ -9,8 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(241, 240, 240); 
+    background-color:rgb(197, 203, 206); 
 }
+
+/* Top-Screen */
 .Topscreen{
     min-height: 100vh;
     width: 100%;
@@ -29,12 +31,17 @@ button{
     font-size: 25px;
     font-family: sans-serif;
     width: fit-content ;
-    transition-duration: 0.4s;
     transform: translateY(-25px);
 }
 button p{
     margin-left: 20px;
     margin-right: 20px;
+}
+button:hover{
+    color: rgb(209, 209, 209) ;
+    background: rgba(96,194,120,1);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s ;
 }
 .text-box{
     position: absolute;
@@ -70,6 +77,41 @@ h1::before{
     }
     70%, 90%
     {
-        width: 100%;
+        width: 99.5%;
     }
 }
+
+/* formatierunng nach TopScreen */
+
+.Content {
+    margin-top: 150px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 25px;
+    padding-right: 25px ;
+}
+
+/* Concept Box */
+
+.conceptbox {
+    background-color: rgb(88,150,153);
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.conceptbox h2 {
+    color: rgb(96,194,120);
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-size: 27.5px;
+    margin-left: 20px;
+}
+.conceptbox p{
+    color: rgb(244,223,207);
+    font-size: 17px;
+    line-height: 22px;
+    font-family: sans-serif;
+    margin: 5px 25px 25px 25px;
+}
+
