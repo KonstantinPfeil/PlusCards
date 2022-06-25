@@ -15,3 +15,6 @@ https://www.youtube.com/watch?v=E_dBqPP9MxI
 
 Dokumenten carousel:
 https://codepen.io/designcourse/pen/OYGdPO?editors=1100
+
+Team tilt effect:
+https://codepen.io/nxworld/pen/vrpJZN

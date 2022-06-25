@@ -9,14 +9,40 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(240, 238, 231); 
+    background-color:var(--color2); 
+}
+
+/* Mode Switch */
+
+body, html .light{
+    --color1: rgb(96,194,120);
+    --color2: rgb(240, 238, 231);
+    --color3: rgba(71, 71, 71, 0.5);
+    --color4: rgba(75, 130, 133, 1);
+    --color5: rgba(75, 130, 133, 1);
+    --color6: transparent;
+}
+body, html .dark{
+    --color1: rgb(96,194,120);
+    --color2: #252839;
+    --color3: rgba(35, 35, 35, 0.5);
+    --color4: rgba(75, 130, 133, 1);
+    --color5: rgb(240, 238, 231);
+    --color6: rgba(35, 35, 35, 0.9);
+}
+#switch {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 65px;
+    width: 65px;
 }
 
 /* Top-Screen */
 .Topscreen{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(71, 71, 71, 0.5),rgba(71, 71, 71, 0.5)), url(images/Background.jpg);
+    background-image: linear-gradient(var(--color3),var(--color3)), url(images/Background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -42,7 +68,7 @@ button:hover{
     background: rgba(96,194,120,1);
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s ;
-}
+} 
 .text-box{
     position: absolute;
     top: 50%;
@@ -64,9 +90,9 @@ h1::before{
     left: 0;
     width: 0;
     height: fit-content;
-    color: rgba(96,194,120,1);
+    color: var(--color1);
     -webkit-text-stroke: 0vw rgb(155,159,161);
-    border-right: 2px solid rgba(96,194,120,1);
+    border-right: 2px solid var(--color1);
     overflow: hidden;
     animation: animate 6s linear infinite;
 }
@@ -95,13 +121,13 @@ h1::before{
 /* Concept Box */
 
 .conceptbox {
-    background-color: rgba(75, 130, 133, 0.9);
+    background-color: var(--color4);
     border-radius: 20px;
     margin-bottom: 75px;
 }
 
 h2 {
-    color: rgb(96,194,120);
+    color: var(--color1);
     font-family: sans-serif;
     margin-top: 20px;
     font-size: 27.5px;
@@ -145,7 +171,7 @@ h2 {
     position: relative;
     width: 300px;
     height: 200px;
-    background: rgba(75, 130, 133, 0.9);
+    background: var(--color4);
     margin: 1em;
     padding: .5em;
     border-radius: 10px;
@@ -178,7 +204,7 @@ h2 {
     height: 100%;
 }
 .left, .right {
-    background: linear-gradient(to right, rgba(240, 238, 231) 0%,rgba(240, 238, 231,0) 100%);
+    background: linear-gradient(to right, var(--color2) 0%,rgba(0,0,0,0) 100%);
     width: 17.5%;
     height: 100%;
     position: absolute;
@@ -186,7 +212,7 @@ h2 {
 }
 .right {
     right: 0;
-    background: linear-gradient(to left, rgba(240, 238, 231) 0%,rgba(240, 238, 231,0) 100%);
+    background: linear-gradient(to left, var(--color2) 0%,rgba(0,0,0,0) 100%);
 }
 
 /* Sicherheit */
@@ -195,8 +221,9 @@ h2 {
     display: flex;
     border: 5px solid;
     border-radius: 20px;
-    border-color: rgba(75, 130, 133, 0.9);
+    border-color: var(--color4);
     margin-bottom: 75px;
+    background-color: var(--color2);
 }
 .pic1{
     flex:0 0 300px;
@@ -204,12 +231,14 @@ h2 {
 .pic1 img{
     max-width: 100%;
     height: 430px;
+    background: linear-gradient(var(--color6),var(--color6));
+    transform: translateY(2px);
 }
 .securityText{
     flex: 0 0 350px;
 }
 .securityText p{
-    color: rgba(75, 130, 133, 1);
+    color: var(--color5);
     font-size: 17px;
     line-height: 22px;
     font-family: sans-serif;
@@ -221,6 +250,8 @@ h2 {
 .pic2 img{
     max-width: 100%;
     height: 430px;
+    background: linear-gradient(var(--color6),var(--color6));
+    transform: translateY(2px);
 }
 
 /* Team */
@@ -228,7 +259,7 @@ h2 {
     max-width: 950px;
 }
 .TEAM h2{
-    color: rgb(96,194,120);
+    color: var(--color1);
     font-family: sans-serif;
     font-size: 27.5px;
     max-width: 950px;
@@ -237,7 +268,7 @@ h2 {
     padding-right: 25px;
 }
 .TEAM p{
-    color: rgba(75, 130, 133, 1);
+    color: var(--color5);
     font-size: 17px;
     line-height: 22px;
     font-family: sans-serif;
@@ -287,7 +318,7 @@ h2 {
     flex: 0 0 260px;
 }
 .Member h3{
-    color: rgb(96,194,120);
+    color: var(--color1);
     font-family: sans-serif;
     margin-top: 15px;
     font-size: 22.5px;
@@ -306,7 +337,8 @@ h2 {
     line-height: 22px;
     font-family: sans-serif;
     margin-bottom: 20px;
+    color: var(--color4)
 }
 .Footer a{
-    color: rgba(75, 130, 133, 1);
+    color: var(--color4);
 }
