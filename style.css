@@ -30,15 +30,66 @@ body, html .dark{
     --color5: rgb(240, 238, 231);
     --color6: rgba(35, 35, 35, 0.9);
 }
-#switch {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    height: 65px;
-    width: 65px;
-}
 
 /* Top-Screen */
+
+.options{
+    background-color: var(--color4);
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 240px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+#switch {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    width: 35px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: var(--color2);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+input:checked[type="checkbox"] {
+    background: var(--color2);
+}
+input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 20;
+    left: 20;
+    background: var(--color1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+input:checked[type="checkbox"]:before{
+    left: 35px;
+}
+.options > button{
+    vertical-align:top;
+    margin-top: 10px;
+    margin-right: 5px;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.options > button img{
+    max-width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}
 .Topscreen{
     min-height: 100vh;
     width: 100%;
@@ -47,7 +98,7 @@ body, html .dark{
     background-size: cover;
     position: relative;
 }
-button{
+.text-box button{
     color: rgba(96,194,120,1);
     background: transparent;
     border: 2px solid rgba(96,194,120,1);
@@ -59,11 +110,11 @@ button{
     width: fit-content ;
     transform: translateY(-25px);
 }
-button p{
+.text-box button p{
     margin-left: 20px;
     margin-right: 20px;
 }
-button:hover{
+.text-box button:hover{
     color: rgb(209, 209, 209) ;
     background: rgba(96,194,120,1);
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);

@@ -1,5 +1,5 @@
 let DARKMODE = false;
-const BUTTON = document.getElementById('switch');
+const CHECKBOX = document.getElementById('switch');
 
 const switchMode = () => {
     DARKMODE = !DARKMODE;
@@ -15,12 +15,12 @@ const setClassToBody = () => {
         document.querySelector('body').classList.add('light');
     }
 }
-if (BUTTON) {
-    BUTTON.addEventListener('click', () => {
+if (CHECKBOX) {
+    CHECKBOX.addEventListener('click', () => {
         switchMode;
         setClassToBody();
     });
 }
-BUTTON.addEventListener('click', switchMode);
+CHECKBOX.addEventListener('click', switchMode);
 setClassToBody();
 
