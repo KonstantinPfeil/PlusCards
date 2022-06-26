@@ -1,4 +1,4 @@
-let DARKMODE = false;
+let DARKMODE = true;
 const CHECKBOX = document.getElementById('switch');
 
 const switchMode = () => {
