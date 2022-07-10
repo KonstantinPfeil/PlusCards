@@ -1,4 +1,4 @@
-# PlusCards
+# +Cards
 This project is a website for a fictitious StartUp, which some friends of mine had to establish for their school.
 
 # Run 
